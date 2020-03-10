@@ -3,19 +3,19 @@ const fs = require('fs');
 const http = require('http');
 
 
-let file = fs.readFileSync('C:/Users/himabindhu/Desktop/NodeRepo/htmlpages/login.html', 'utf-8');
-let file2 = fs.readFileSync('C:/Users/himabindhu/Desktop/NodeRepo/htmlpages/welcomepage.html', 'utf-8');
+let file = fs.readFileSync('./../htmlpages/login.html', 'utf-8');
+let file2 = fs.readFileSync('./..//htmlpages/welcomepage.html', 'utf-8');
 
 //this will be executed last
 setTimeout(() => {
-    fs.readFile('C:/Users/himabindhu/Desktop/complete-node-bootcamp-master/1-node-farm/starter/txt/input.txt', 'utf-8', (err, data) => {
+    fs.readFile('./../Text/input.txt', 'utf-8', (err, data) => {
         console.log(`str2 is ${data} `);
     }), 0
 });
 
 //this will be executed second 
 setImmediate(() => {
-    fs.writeFileSync('C:/Users/himabindhu/Desktop/complete-node-bootcamp-master/1-node-farm/starter/txt/output.txt', '\n this is from event loop', );
+    fs.writeFileSync('./../Text/output.txt', '\n this is from event loop', );
     console.log('file written in to the output');
 })
 

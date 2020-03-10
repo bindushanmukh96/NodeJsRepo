@@ -6,7 +6,7 @@ server.on("request", (request, response) => {
 
     //reading the data in the form of chunks
 
-    const fr = file.createReadStream('C:/Users/himabindhu/Desktop/NodeRepo/Text/read-this.txt');
+    const fr = file.createReadStream('./../Text/read-this.txt');
     fr.on('data', chunk => {
 
         response.write(chunk);

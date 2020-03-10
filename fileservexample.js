@@ -3,8 +3,8 @@ const http = require('http');
 const fs = require('fs');
 
 
-let file = fs.readFileSync('C:/Users/himabindhu/Desktop/NodeRepo/htmlpages/login.html', 'utf-8');
-let file2 = fs.readFileSync('C:/Users/himabindhu/Desktop/NodeRepo/htmlpages/welcomepage.html', 'utf-8');
+let file = fs.readFileSync('./../htmlpages/login.html', 'utf-8');
+let file2 = fs.readFileSync('./../htmlpages/welcomepage.html', 'utf-8');
 
 
 

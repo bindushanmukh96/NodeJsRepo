@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-let file2 = fs.readFileSync('C:/Users/himabindhu/Desktop/NodeRepo/Text/input.txt', 'utf-8');
+let file2 = fs.readFileSync('./../Text/input.txt', 'utf-8');
 
 
 //Sending data to client 
